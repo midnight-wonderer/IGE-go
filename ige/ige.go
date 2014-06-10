@@ -46,9 +46,9 @@ func newIGE(b cipher.Block, iv []byte) (ret *ige) {
 
 type igeEncrypter ige
 
-//cryptBlocks was written in Encrypter perspective
-//since IGE mode use nearly identical algorithm
-//we can use it as Decrypter too
+//cryptBlocks was written in Encrypter perspective.
+//Since IGE mode use nearly identical algorithm
+//for both direction we can use it as Decrypter too.
 func cryptBlocks(dst, src []byte, x *igeEncrypter, cryptFunc func([]byte, []byte)) {
 	if len(src)%x.blockSize != 0 {
 		panic("crypto/cipher: input not full blocks")
