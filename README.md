@@ -6,7 +6,8 @@ Since you are here I guess you know why and when to use IGE mode.
 go get github.com/MidnightWonderer/IGE-go/ige
 
 ###Example Usage
-`package main
+```golang
+package main
 
 import (
 	"crypto/aes"
@@ -29,7 +30,8 @@ func main() {
 	//4c2e204c6574277320686f70652042656e20676f74206974207269676874210a
 	//test vector:
 	//https://web.archive.org/web/20120418022623/http://www.links.org/files/openssl-ige.pdf
-}`
+}
+```
 
 ###etc.
 IGE-go was placed under The MIT-Zero License. Contribution back is encouraged.
