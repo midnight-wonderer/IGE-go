@@ -6,7 +6,7 @@ Since you are here I guess you know why and when to use IGE mode.
 go get github.com/MidnightWonderer/IGE-go/ige
 
 ###Example Usage
-```golang
+```Go
 package main
 
 import (
