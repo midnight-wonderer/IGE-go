@@ -60,7 +60,7 @@ func cryptBlocks(dst, src []byte, x *igeEncrypter, cryptFunc func([]byte, []byte
 
 // NewIGEEncrypter returns a BlockMode which encrypts in
 // infinite garble extension mode, using the given Block.
-// The length of iv must be the same as the Block's block size.
+// The length of iv must be 2 times of Block's block size.
 func NewIGEEncrypter(b cipher.Block, iv []byte) cipher.BlockMode {
 	if len(iv) != b.BlockSize()*2 {
 		panic("ige.NewIGEEncrypter: IV length must equal 2 * block size")
@@ -87,7 +87,7 @@ type igeDecrypter ige
 
 // NewIGEDecrypter returns a BlockMode which decrypts in
 // infinite garble extension mode, using the given Block.
-// The length of iv must be the same as the Block's block size.
+// The length of iv must be 2 times of Block's block size.
 func NewIGEDecrypter(b cipher.Block, iv []byte) cipher.BlockMode {
 	if len(iv) != b.BlockSize()*2 {
 		panic("cipher.NewIGEDecrypter: IV length must equal 2 * block size")
