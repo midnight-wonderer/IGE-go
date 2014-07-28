@@ -1,6 +1,6 @@
 ###IGE-go
 My favorite cryptography mode of operation scheme for the block cipher, Infinite Garble Extension.
-Since you are here I guess you know why and when to use IGE mode.
+Since you are here I guess you know why and when to use IGE mode but if not just [Google it](https://encrypted.google.com/search?q=Infinite+Garble+Extension&hl=en) for more info.
 
 ###Install
 go get github.com/MidnightWonderer/IGE-go/ige
