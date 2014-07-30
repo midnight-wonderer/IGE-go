@@ -1,5 +1,5 @@
 ###IGE-go
-My favorite cryptography mode of operation scheme for the block cipher, Infinite Garble Extension.
+My favorite cryptography mode of operation scheme for the block cipher, Infinite Garble Extension. It is not good for general purpose message authentication though.
 Since you are here I guess you know why and when to use IGE mode but if not just [Google it](https://encrypted.google.com/search?q=Infinite+Garble+Extension&hl=en) for more info.
 
 ###Install
